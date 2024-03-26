@@ -1,10 +1,11 @@
 
 Some labs to study distributed systems:
 
-## Lab1: Word-Count
-
+## Lab1: MapReduce
 
 ## Lab2: Raft
 
+## Lab3: Fault-tolerant Key/Value Service
 
+## Lab4: Sharded Key/Value Service
 
