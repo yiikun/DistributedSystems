@@ -3,6 +3,45 @@ Some labs to study distributed systems:
 
 ## Lab1: MapReduce
 
+
+### Prepared
+
+A simple sequential mapreduce implementation: 
+    src/main/mrsequential.go. 
+A couple of MapReduce applications: 
+    word-count in mrapps/wc.go, and a text indexer in mrapps/indexer.go. 
+
+```
+go build -buildmode=plugin ../mrapps/wc.go
+rm mr-out*
+go run mrsequential.go wc.so pg*.txt
+more mr-out-0
+```
+
+### TODO
+
+To implement a distributed MapReduce, consisting of two programs, the master and the worker. 
+
+```
+go build -buildmode=plugin ../mrapps/wc.go
+```
+
+In the main directory, run the master.
+```
+rm mr-out*
+go run mrmaster.go pg-*.txt
+```
+
+In one or more other windows, run some workers:
+```
+go run mrworker.go wc.so
+```
+
+### Paper: MapReduce: Simplified Data Processing on Large Clusters
+
+
+
+
 ## Lab2: Raft
 
 ## Lab3: Fault-tolerant Key/Value Service
