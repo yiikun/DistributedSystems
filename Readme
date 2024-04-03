@@ -48,6 +48,8 @@ When the user program calls the $MapReduce$ function, the following sequence of 
     6. The reduce worker iterates over the sorted intermediate data and for each unique intermediate keyencountered, itpasses the keyand the corresponding set of intermediate values tothe user's Reduce function. 
     7. When all map tasks and reduce tasks have been completed, the master wakes up the user program. At this point, the MapReduce call in the user program returns back to the user code.
 
+Modify the mrmaster.go?
+
 
 ## Lab2: Raft
 
