@@ -50,8 +50,9 @@ When the user program calls the $MapReduce$ function, the following sequence of 
 
 Modify the mrmaster.go. 
 
-
 ## Lab2: Raft
+
+
 
 ## Lab3: Fault-tolerant Key/Value Service
 
